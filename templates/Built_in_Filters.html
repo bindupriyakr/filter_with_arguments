@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built_in_Filters</title>
+</head>
+<body>
+    <center>
+        <h1>Built in Filters Creations</h1>
+    <h2>
+        <!-- Normally defined data -->
+        {{data}} <br>
+        {{Filters}}
+    <!-- Filters Defined data -->
+        {{data|title}} <br>
+        {{data|lower}} <br>
+        {{data|upper}} <br>
+    <!-- capitaize is go throw that capfirst-->
+        {{data|capfirst}} <br>
+        {{data|length}} <br>
+
+    </h2>
+    <!-- Using Filters with arguments -->
+    <h1>
+    {{data|truncatewords:4}} <br>
+    {{data|truncatechars:7}} <br>
+    {{data|slice:10}} <br>
+    {{dt}} <br>
+    {{dt|date:'H y D Y d'}}
+</h1>
+    </center>
+</body>
+</html>
